@@ -61,3 +61,10 @@ Grandpa helps you
 * Convey your intent 
 * Have auto filled your asserts with messages that make sense 
 
+## Grandpa is friend with everyone!
+You love JUnit! You are welcome, You hate it? You are welcome too. The biggest fallacy of unit testing is that we need an unit testing framework for unit testing. How comfortable! Trust me all unit testing framework can just boil down to one function. A function that can assert the truthfulness of a given expression. In JUNit it is `assertTrue`. In NUnit it is `Assert.IsTrue` 
+
+The rationale behind this generalization is that every unit test can be written such that it will be enough to test the truthfulness of an expression or multiple such expressions. Where test frameworks help is that they provide a multitude of overloads of several methods to test the equality and in-equality of several expressions. All that overloads can disappear and you should still be able to unit test with `assertTrue` or equivalent functions in other frameworks. `Grandpa` helps you celebrate this! 
+
+So if you love testing frameworks you can use `Grandpa` with those else you can use `Grandpa` inside your project and just use if conditions. 
+
