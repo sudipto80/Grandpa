@@ -32,7 +32,7 @@ This test will fail should the obvious implementation of `tester.multiply` is wr
 Grandpa is a DSL (Domain Specific Language) for unit testing written using `Kotlin` for `Kotlin`. The main focus of `Grandpa` is simplicity and intention driven unit testing with a focus on very less typing needs. The motto is getting more done with less code. 
 Since `Kotlin` as a language provide several ways to communicate the intent of a test developer, it is a natural choice for writing the DSL for unit testing. 
 
-## What does `Grandpa` do ?
+## What does `Grandpa` do ? Show me some code!
 Grandpa lets you glue your test results inside your unit test phase by phase. So that you can write tests like this 
 
 ```kotlin
