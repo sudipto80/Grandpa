@@ -28,6 +28,10 @@ public class MyTests {
 ```
 This test will fail should the obvious implementation of `tester.multiply` is wrong yielding a false result for `10x0` even though it produces correct result for `0x0`. And since Kluent and all other such fluent testing interfaces rely on JUnit without a mechanism of message passing in between the phases of an unit test, all of these fail to create a single error message per test fixing which will make sure that the entire test passes irrespective of the number of assert statements in the test. 
 
+## What is `Grandpa`
+Grandpa is a DSL (Domain Specific Language) for unit testing written using `Kotlin` for `Kotlin`. The main focus of `Grandpa` is simplicity and intention driven unit testing with a focus on very less typing needs. The motto is getting more done with less code. 
+Since `Kotlin` as a language provide several ways to communicate the intent of a test developer, it is a natural choice for writing the DSL for unit testing. 
+
 ## What does `Grandpa` do ?
 Grandpa lets you glue your test results inside your unit test phase by phase. So that you can write tests like this 
 
