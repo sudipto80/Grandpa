@@ -47,6 +47,12 @@ Grandpa lets you glue your test results inside your unit test phase by phase. So
             val (testPassed, failureMessage) = nameCheck And intCheckResult And anotherStringCheckResult
             assertTrue(failureMessage,testPassed);
   ```
- `Grandpa` relies on `Extension Functions` and `Infix` functions feature of `Kotlin`
+ `Grandpa` relies on [`Extension Functions`](https://kotlinlang.org/docs/reference/extensions.html) and [`Infix`](https://kotlinlang.org/docs/reference/functions.html) functions feature of `Kotlin`
 
+## What are the benefits of testing like Grandpa?
+Grandpa helps you 
+
+* Type less 
+* Convey your intent 
+* Have auto filled your asserts with messages that make sense 
 
