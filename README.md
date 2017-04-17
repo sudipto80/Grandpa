@@ -1,5 +1,5 @@
-# Grandpa
-_Unit testing in `Kotlin` is like a walk by the lake._ 
+ # Grandpa
+_Unit testing in `Kotlin` is like a walk by the lake with Grandpa!._ 
 
 ![Alt text](https://github.com/sudipto80/Grandpa/blob/master/free-cute-cartoon-grandpa-clip-art-jeiws6-clipart.png)
 
