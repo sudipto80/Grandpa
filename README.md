@@ -68,7 +68,7 @@ The rationale behind this generalization is that every unit test can be written 
 
 So if you love testing frameworks you can use `Grandpa` with those else you can use `Grandpa` inside your project and just use if conditions. 
 
-## Grandpa's Diction!
+## Grandpas Diction!
 Grandpa likes English. But feel free to teach him new languages. Extending is really simple and the result is awesome. You can now write your unit tests in your language (Well almost!)
 
 Grandpa has several extension methods and their back tick version that improves readability. Here are some of his phrases. He really likes to start his phrases with `should`. 
