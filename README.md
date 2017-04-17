@@ -1,4 +1,4 @@
-# Grandpa
+Grandpa
 _Unit testing in `Kotlin` is like a walk by the lake._ 
 
 ![Alt text](https://github.com/sudipto80/Grandpa/blob/master/free-cute-cartoon-grandpa-clip-art-jeiws6-clipart.png)
@@ -46,8 +46,7 @@ Grandpa lets you glue your test results inside your unit test phase by phase. So
             //Infix function "And" in action!
             val (testPassed, failureMessage) = nameCheck And intCheckResult And anotherStringCheckResult
             assertTrue(failureMessage,testPassed);
-    }
-    ```
+  ```
  `Grandpa` relies on `Extension Functions` and `Infix` functions feature of `Kotlin`
 
 
