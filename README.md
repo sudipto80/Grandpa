@@ -1,4 +1,5 @@
- # Grandpa
+
+# Grandpa
 _Unit testing in `Kotlin` is like a walk by the lake with Grandpa!._ 
 
 ![Alt text](https://github.com/sudipto80/Grandpa/blob/master/free-cute-cartoon-grandpa-clip-art-jeiws6-clipart.png)
@@ -67,4 +68,30 @@ You love JUnit! You are welcome, You hate it? You are welcome too. The biggest f
 The rationale behind this generalization is that every unit test can be written such that it will be enough to test the truthfulness of an expression or multiple such expressions. Where test frameworks help is that they provide a multitude of overloads of several methods to test the equality and in-equality of several expressions. All that overloads can disappear and you should still be able to unit test with `assertTrue` or equivalent functions in other frameworks. `Grandpa` helps you celebrate this! 
 
 So if you love testing frameworks you can use `Grandpa` with those else you can use `Grandpa` inside your project and just use if conditions. 
+
+## Grandpa's Diction!
+Grandpa likes English. But feel free to teach him new languages. Extending is really simple and the result is awesome. You can now write your unit tests in your language (Well almost!)
+
+Grandpa has several extension methods and their back tick version that improves readability. Here are some of his phrases. He really likes to start his phrases with `should`. 
+
+* shouldBe
+* shouldNotBe
+* shouldBeBetween 
+* shouldNotBeBetween
+* shouldContain
+* shouldNotContain
+* shouldHave
+* shouldNotHave
+* shouldNotBeNull
+* shouldNotBeEmpty
+* shouldHaveAtLeast
+* shouldHaveAtMost
+* shouldBeEquivalentTo
+* shouldNotBeEquivalentTo
+* IsMadeOf
+* IsNotMadeOf
+* IsPositive
+* IsGreaterThan
+* IsGraterThanOrEqualTo
+* IsLessThan (And all other operators )
 
