@@ -1,7 +1,8 @@
 # Grandpa
 ![Alt text](https://github.com/sudipto80/Grandpa/blob/master/free-cute-cartoon-grandpa-clip-art-jeiws6-clipart.png)
 
-Unit test helpers for Kotlin that your grandpa will get and never forget!
+_Unit testing is like a walk by the lake. 
+
 
 ```kotlin
 fun Triple<Int,Boolean,String>.shouldBe(other :Int, prev : Triple<Int,Boolean,String>? = null)
