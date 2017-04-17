@@ -35,7 +35,7 @@ Since `Kotlin` as a language provide several ways to communicate the intent of a
 ## What does `Grandpa` do ? Show me some code!
 Grandpa lets you glue your test results inside your unit test phase by phase. So that you can write tests like this 
 
-````kotlin
+```kotlin
     @Test
     public void CheckNamesAndSums(){
             val nameCheck = getName()
