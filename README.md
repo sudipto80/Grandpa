@@ -19,6 +19,7 @@ public class MyTests {
         public void multiplicationOfZeroIntegersShouldReturnZero() {
                 MyClass tester = new MyClass(); // MyClass is tested
 
+
                 // assert statements
                 assertEquals("10 x 0 must be 0", 0, tester.multiply(10, 0));
                 assertEquals("0 x 10 must be 0", 0, tester.multiply(0, 10));
@@ -29,7 +30,7 @@ public class MyTests {
 This test will fail should the obvious implementation of `tester.multiply` is wrong yielding a false result for `10x0` even though it produces correct result for `0x0`. And since Kluent and all other such fluent testing interfaces rely on JUnit without a mechanism of message passing in between the phases of an unit test, all of these fail to create a single error message per test fixing which will make sure that the entire test passes irrespective of the number of assert statements in the test. 
 
 ## What is `Grandpa`
-`Grandpa is a DSL (Domain Specific Language) for unit testing written using `Kotlin` for `Kotlin`. The main focus of `Grandpa` is simplicity and intention driven unit testing with a focus on very less typing needs. The motto is getting more done with less code. 
+`Grandpa` is a DSL (Domain Specific Language) for unit testing written using `Kotlin` for `Kotlin`. The main focus of `Grandpa` is simplicity and intention driven unit testing with a focus on very less typing needs. The motto is getting more done with less code. 
 Since `Kotlin` as a language provide several ways to communicate the intent of a test developer, it is a natural choice for writing the DSL for unit testing. 
 
 ## What does `Grandpa` do ? Show me some code!
@@ -52,7 +53,7 @@ Grandpa lets you glue your test results inside your unit test phase by phase. So
             assertTrue(failureMessage,testPassed);
   }
 ```
-`Grandpa` relies on [`Extension Functions`](https://kotlinlang.org/docs/reference/extensions.html) and [`Infix`](https://kotlinlang.org/docs/reference/functions.html) functions feature of `Kotlin`
+ The project `Grandpa` relies on [`Extension Functions`](https://kotlinlang.org/docs/reference/extensions.html) and [`Infix`](https://kotlinlang.org/docs/reference/functions.html) functions feature of `Kotlin`
 
 ## What are the benefits of testing like Grandpa?
 Grandpa helps you 
