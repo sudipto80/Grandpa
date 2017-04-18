@@ -46,9 +46,9 @@ Grandpa lets you glue your test results inside your unit test phase by phase. So
                                   .shouldBe(36)
                                   .pleaseCheck()
             val anotherStringCheckResult = getGivenName()
-`                                   .LengthIsBetween(12,34)
+                                   .LengthIsBetween(12,34)
                                    .pleaseCheck()
-            //Infix function "And" in action!
+            //Infix function And in action!
             val (testPassed, failureMessage) = nameCheck And intCheckResult And anotherStringCheckResult
             assertTrue(failureMessage,testPassed);
   }
