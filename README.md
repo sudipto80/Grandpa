@@ -78,7 +78,10 @@ Grandpa helps you
 
 * Type less 
 * Convey your intent 
+* Write tests in your language 
 * Have auto filled your asserts with messages that make sense 
+
+## A side by side comparison
 
 ## Grandpa is friend with everyone!
 You love JUnit! You are welcome, You hate it? You are welcome too. The biggest fallacy of unit testing is that we need an unit testing framework for unit testing. How comfortable! Trust me all unit testing framework can just boil down to one function. A function that can assert the truthfulness of a given expression. In JUNit it is `assertTrue`. In NUnit it is `Assert.IsTrue` 
@@ -88,9 +91,9 @@ The rationale behind this generalization is that every unit test can be written 
 So if you love testing frameworks you can use `Grandpa` with those else you can use `Grandpa` inside your project and just use if conditions. 
 
 ## Grandpas Diction!
-Grandpa likes English. But feel free to teach him new languages. Extending is really simple and the result is awesome. You can now write your unit tests in your language (Well almost!)
+Grandpa likes English. But feel free to teach him new languages. Extending is really simple and the result is awesome. You can now write your unit tests in your language as shown before. 
 
-Grandpa has several extension methods and their back tick version that improves readability. Here are some of his phrases. He really likes to start his phrases with `should`. 
+Grandpa has several extension methods and their back tick version that improves readability. Here are some of his phrases (This is by no means comprehensive). He really likes to start his phrases with `should`. 
 
 * `shouldBe`
 * `shouldNotBe`
@@ -112,4 +115,19 @@ Grandpa has several extension methods and their back tick version that improves 
 * `IsGreaterThan`
 * `IsGraterThanOrEqualTo`
 * `IsLessThan` (And all other operators )
+
+## Grandpa Packages
+Functionalities in Grandpa comes in few well structured packages. 
+
+`Grandpa.Numbers` :Functionalities for asserting numeric facts
+`Grandpa.Text` : Functionalities for asserting string related facts.
+`Grandpa.Date` : Functionalities for asserting date related facts.
+`Grandpa.Time` : Functionalities for asserting time related facts.
+`Grandpa.Utilities` : Home of several glue functions (created using Extension and Infix functions) 
+
+## Teaching Grandpa New Languages!
+You can extend Grandpa by creating a new package based on the existing ones by adding the language markers at the end. For example packages meant for `French` should be marked as `fr` at the end. So when you extend the `Grandpa.Numbers` package for `French` you should name it as `Grandpa.Numbers.fr`. This is just a convention that have been proven useful over the years. 
+
+
+
 
