@@ -54,7 +54,7 @@ Grandpa lets you glue your test results inside your unit test phase by phase. So
             assertTrue(failureMessage,testPassed);
   }
 ```
-Grandpa will also have back quote version of several methods whenever it makes sense. So it will be possible to write checks like this
+Grandpa will also have back quote version of several methods and extension functions whenever it makes sense. So it will be possible to write checks like this. 
 
 ```kotlin
  var aGoodCondition = (2+getRandom())
@@ -62,6 +62,15 @@ Grandpa will also have back quote version of several methods whenever it makes s
                                .`should be between` (1 And 5)
                                .pleaseCheck()
 ``` 
+As you can see that this test can be translated to other languages fairly easily by providing duplicate functions with different names for other languages like French for example. 
+
+```kotlin
+var aGoodConditionDescribedInFrench = (2 + getRandom())
+                                      .`est positif` //Same as isPositive
+                                      .`devrait se situer entre` (1 et 5) //Same as `should be between` (1 And 5)
+                                      .`s’il vous plaît vérifier`//Same as pleaseCheck
+```
+
 The project `Grandpa` relies on [`Extension Functions`](https://kotlinlang.org/docs/reference/extensions.html) and [`Infix`](https://kotlinlang.org/docs/reference/functions.html) functions feature of `Kotlin`
  
 
