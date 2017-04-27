@@ -120,9 +120,13 @@ Grandpa has several extension methods and their back tick version that improves 
 Functionalities in Grandpa comes in few well structured packages. 
 
 `Grandpa.Numbers` :Functionalities for asserting numeric facts
+
 `Grandpa.Text` : Functionalities for asserting string related facts.
+
 `Grandpa.Date` : Functionalities for asserting date related facts.
+
 `Grandpa.Time` : Functionalities for asserting time related facts.
+
 `Grandpa.Utilities` : Home of several glue functions (created using Extension and Infix functions) 
 
 ## Teaching Grandpa New Languages!
