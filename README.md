@@ -2,7 +2,7 @@
 _Unit testing in `Kotlin` is like a walk by the lake with Grandpa!._ 
 
 ![Alt text](https://github.com/sudipto80/Grandpa/blob/master/free-cute-cartoon-grandpa-clip-art-jeiws6-clipart.png)
-
+o
 ## Why another framework? 
 There are some frameworks to do unit testing in Kotlin. For example Kluent and Spek. However these frameworks have a major problem. 
 These don't allow gluing together multiple checks and therefore each tests fail at the first occurence of any faliure that might occur. For example consider the following JUnit test 
@@ -12,7 +12,7 @@ These don't allow gluing together multiple checks and therefore each tests fail 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
-
+k
 public class MyTests {
 
         @Test
@@ -30,6 +30,7 @@ public class MyTests {
 This test will fail should the obvious implementation of `tester.multiply` is wrong yielding a false result for `10x0` even though it produces correct result for `0x0`. And since Kluent and all other such fluent testing interfaces rely on JUnit without a mechanism of message passing in between the phases of an unit test, all of these fail to create a single error message per test fixing which will make sure that the entire test passes irrespective of the number of assert statements in the test. 
 
 ## What is `Grandpa`
+
 `Grandpa` is a DSL (Domain Specific Language) for unit testing written using `Kotlin` for `Kotlin`. The main focus of `Grandpa` is simplicity and intention driven unit testing with a focus on very less typing needs. The motto is getting more done with less code. 
 Since `Kotlin` as a language provide several ways to communicate the intent of a test developer, it is a natural choice for writing the DSL for unit testing. 
 
@@ -53,7 +54,16 @@ Grandpa lets you glue your test results inside your unit test phase by phase. So
             assertTrue(failureMessage,testPassed);
   }
 ```
- The project `Grandpa` relies on [`Extension Functions`](https://kotlinlang.org/docs/reference/extensions.html) and [`Infix`](https://kotlinlang.org/docs/reference/functions.html) functions feature of `Kotlin`
+Grandpa will also have back quote version of several methods whenever it makes sense. So it will be possible to write checks like this
+
+```kotlin
+ var aGoodCondition = (2+getRandom())
+                               .isPositive()
+                               .`should be between` (1 And 5)
+                               .pleaseCheck()
+``` 
+The project `Grandpa` relies on [`Extension Functions`](https://kotlinlang.org/docs/reference/extensions.html) and [`Infix`](https://kotlinlang.org/docs/reference/functions.html) functions feature of `Kotlin`
+ 
 
 ## What are the benefits of testing like Grandpa?
 Grandpa helps you 
