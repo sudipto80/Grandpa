@@ -57,7 +57,7 @@ Grandpa lets you glue your test results inside your unit test phase by phase. So
 Grandpa will also have back quote version of several methods and extension functions whenever it makes sense. So it will be possible to write checks like this. 
 
 ```kotlin
- var aGoodCondition = (2+getRandom())
+ val aGoodCondition = (2+getRandom())
                                .isPositive()
                                .`should be between` (1 And 5)
                                .pleaseCheck()
@@ -65,13 +65,12 @@ Grandpa will also have back quote version of several methods and extension funct
 As you can see that this test can be translated to other languages fairly easily by providing duplicate functions with different names for other languages like French for example. 
 
 ```kotlin
-var aGoodConditionDescribedInFrench = (2 + getRandom())
+val aGoodConditionDescribedInFrench = (2 + getRandom())
                                       .`est positif` //Same as isPositive
                                       .`devrait se situer entre` (1 et 5) //Same as `should be between` (1 And 5)
                                       .`s’il vous plaît vérifier`//Same as pleaseCheck
 ```
-
-The project `Grandpa` relies on [`Extension Functions`](https://kotlinlang.org/docs/reference/extensions.html) and [`Infix`](https://kotlinlang.org/docs/reference/functions.html) functions feature of `Kotlin`
+I would agree that this test might be verbose but the readability gain is awesome. Also non programmers domain experts can express their idea about correctness very easily (and in their own language). The project `Grandpa` relies on [`Extension Functions`](https://kotlinlang.org/docs/reference/extensions.html) and [`Infix`](https://kotlinlang.org/docs/reference/functions.html) functions feature of `Kotlin`
  
 
 ## What are the benefits of testing like Grandpa?
