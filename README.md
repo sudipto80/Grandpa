@@ -2,7 +2,7 @@
 _Unit testing in `Kotlin` is like a walk by the lake with Grandpa!._ 
 
 ![Alt text](https://github.com/sudipto80/Grandpa/blob/master/free-cute-cartoon-grandpa-clip-art-jeiws6-clipart.png)
-o
+
 ## Why another framework? 
 There are some frameworks to do unit testing in Kotlin. For example Kluent and Spek. However these frameworks have a major problem. 
 These don't allow gluing together multiple checks and therefore each tests fail at the first occurence of any faliure that might occur. For example consider the following JUnit test 
