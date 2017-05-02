@@ -81,7 +81,7 @@ Grandpa helps you
 * Write tests in your language 
 * Have auto filled your asserts with messages that make sense 
 
-## A side by side comparison
+
 
 ## Grandpa is friend with everyone!
 You love JUnit! You are welcome, You hate it? You are welcome too. The biggest fallacy of unit testing is that we need an unit testing framework for unit testing. How comfortable! Trust me all unit testing framework can just boil down to one function. A function that can assert the truthfulness of a given expression. In JUNit it is `assertTrue`. In NUnit it is `Assert.IsTrue` 
